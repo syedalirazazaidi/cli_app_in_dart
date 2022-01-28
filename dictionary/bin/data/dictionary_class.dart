@@ -10,13 +10,14 @@ class Dictionary {
   static Dictionary fromMap(List<dynamic> json) {
     return Dictionary(
       word: json.first['word'],
-      meaning: json.first['meanings'].first['definations'].first['defination'],
-      sentence: json.first['meanings'].first['definations'].first['example'],
+      meaning: json.first['meanings'].first['definitions'].first['definition'],
+      sentence: json.first['meanings'].first['definitions'].first['example'],
     );
   }
 
   @override
-  String toString() => '''Word:$word
+  String toString() => '''
+  Word:$word
   Meaning:$meaning
   Sentences:$sentence
   ''';
