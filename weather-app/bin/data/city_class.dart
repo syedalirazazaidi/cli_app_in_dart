@@ -8,7 +8,6 @@ class City {
     required this.description,
   });
   static City fromMap(Map<String, dynamic> json) {
-    print('$json ====');
     return City(
       city: json['name'],
       temperature: json["main"]["temp"],
